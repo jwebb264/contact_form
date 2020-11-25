@@ -9,30 +9,30 @@
 </head>
 
 <body>
-    <div class="container intro">
-        <h3>Have any other questions?</h3>
-        <form method="POST" data-netlify="true">
-            <div class="contact_info">
-                <div class="col">
-                    <div class="field">
-                        <input type="text" class="contact" name="contactName" placeholder="Name">
-                    </div>
-                    <div class="field">
-                        <input type="email" class="contact" name="contactEmail" placeholder="Email">
-                    </div>
-                    <div class="field">
-                        <input type="text" class="contact" name="contactSubject" placeholder="Subject">
-                    </div>
+    <div class="container">
+        <h3>Contact Me</h3>
+        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+        <form method="POST" data-netlify="true" action="/">
+            <div class="row gtr-uniform">
+                <div class="col-6 col-12-xsmall">
+                    <input type="text" name="contact-name" id="name" placeholder="Name" />
+                </div>
+                <div class="col-6 col-12-xsmall">
+                    <input type="email" name="contact-email" id="email" placeholder="Email" />
+                </div>
+                <div class="col-12">
+                    <input type="text" name="contact-subject" id="subject" placeholder="Subject" />
+                </div>
+                <div class="col-12">
+                    <textarea name="contact-message" id="message" placeholder="Message" rows="6"></textarea>
+                </div>
+                <div class="col-12">
+                    <ul class="actions">
+                        <li><input type="submit" class="primary" value="Send Message" /></li>
+                        <!-- <li><input type="reset" value="Reset Form" /></li> -->
+                    </ul>
                 </div>
             </div>
-            <h3>Let's Chat</h3>
-            <div class="contact_message field">
-                <textarea class="contact" cols="60" rows="10" name="contactMessage" placeholder="Message" required></textarea>
-            </div>
-            <!-- <div>
-                        <input type="file" id="myFile" name="filename" placeholder="Upload File">
-                    </div> -->
-            <input type="button" value="Send Email" class="contact-submit btn btn-dark btn-lg" onclick="sendEmail()"></input>
         </form>
 
         <script scr="index.js"></script>
