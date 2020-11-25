@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="container intro">
+        <h3>Have any other questions?</h3>
+        <form method="POST" data-netlify="true">
+            <div class="contact_info">
+                <div class="col">
+                    <div class="field">
+                        <input type="text" class="contact" name="contactName" placeholder="Name">
+                    </div>
+                    <div class="field">
+                        <input type="email" class="contact" name="contactEmail" placeholder="Email">
+                    </div>
+                    <div class="field">
+                        <input type="text" class="contact" name="contactSubject" placeholder="Subject">
+                    </div>
+                </div>
+            </div>
+            <h3>Let's Chat</h3>
+            <div class="contact_message field">
+                <textarea class="contact" cols="60" rows="10" name="contactMessage" placeholder="Message" required></textarea>
+            </div>
+            <!-- <div>
+                        <input type="file" id="myFile" name="filename" placeholder="Upload File">
+                    </div> -->
+            <input type="button" value="Send Email" class="contact-submit btn btn-dark btn-lg" onclick="sendEmail()"></input>
+        </form>
+
+        <script scr="index.js"></script>
+
+</body>
+
+</html>
